@@ -1,0 +1,39 @@
+.hero {
+    .container {
+        width: 1280px;
+        height: 450px;
+        background-image: url("../image/Coffee_Image.png");
+        background-repeat: no-repeat;
+        background-size: contain;
+        border-radius: 10px;
+    }
+
+   margin-top: 60px;
+}
+
+
+.hero__info {
+    width: 500px;
+    padding: 0;
+    margin: 0;
+    padding-top: 100px;
+    padding-left: 85px;
+
+    &--heading {
+        color: #FEFCF7;
+        font-family: "Fraunces";
+        font-size: 40px;
+        font-style: normal;
+        font-weight: 900;
+        line-height: 48px;
+    }
+
+    &--text {
+        color: #FEFCF7;
+        font-family: "Barlow";
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 26px;
+    }
+}
