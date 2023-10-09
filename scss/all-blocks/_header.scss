@@ -1,6 +1,7 @@
 .header{
     position: fixed;
     width: 100%;
+    z-index: 1;
 
 }
 
@@ -41,5 +42,32 @@
         }
     }
 
+}
 
+.nav__button{
+    display: none;
+}
+
+.header__response{
+    display: none;
+}
+
+@media only screen and (max-width:634px){
+    .nav{
+        display: none;
+    }
+
+    .nav__button{
+        display: block;
+    }
+}
+
+@media only screen and (max-width:450px){
+    .header__logo{
+        display: none;
+    }
+
+    .header__response{
+        display: block;
+    }
 }

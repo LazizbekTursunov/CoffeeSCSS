@@ -1,5 +1,6 @@
 .container {
-  width: 1320px;
+  max-width: 1320px;
+  width: 100%;
   padding: 0px 20px;
   margin: 0 auto;
 }
@@ -7,6 +8,7 @@
 .header {
   position: fixed;
   width: 100%;
+  z-index: 1;
 }
 
 .header .container {
@@ -39,7 +41,32 @@
   color: black;
 }
 
+.nav__button {
+  display: none;
+}
+
+.header__response {
+  display: none;
+}
+
+@media only screen and (max-width: 634px) {
+  .nav {
+    display: none;
+  }
+  .nav__button {
+    display: block;
+  }
+}
+@media only screen and (max-width: 450px) {
+  .header__logo {
+    display: none;
+  }
+  .header__response {
+    display: block;
+  }
+}
 .hero {
+  z-index: -1;
   margin-top: 60px;
 }
 .hero .container {
@@ -75,7 +102,18 @@
   line-height: 26px;
 }
 
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixwl-ratio: 2), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2ddpx) {
+  .hero .container {
+    background-image: url(../image/FuckingImage.png_2x);
+    width: 1280px;
+    height: 450px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    border-radius: 10px;
+  }
+}
 .about {
+  z-index: -1;
   margin-top: 160px;
 }
 .about .container {
@@ -113,6 +151,7 @@
 }
 
 .phonk {
+  z-index: -1;
   margin-top: 158px;
 }
 .phonk .container {
@@ -159,6 +198,7 @@
 }
 
 .music {
+  z-index: -1;
   margin-top: 158px;
 }
 .music .container {
