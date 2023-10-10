@@ -9,7 +9,7 @@
 
     &__title{
         padding-bottom: 72px;
-        color: #83888F;
+        color: var(--color-grey);
         font-family: "Fraunces";
         font-size: 24px;
         font-style: normal;
@@ -28,7 +28,7 @@
     }
 
     &__heading{
-        color: #333D4B;
+        color: var(--color-dimgrey);
         font-family: "Fraunces";
         font-size: 32px;
         font-style: normal;
@@ -37,7 +37,7 @@
     }
 
     &__text{
-        color: #333D4B;
+        color: var(--color-dimgrey);
         font-family: "Barlow";
         font-size: 16px;
         font-style: normal;

@@ -28,7 +28,7 @@
   padding-left: 33px;
 }
 .nav__link {
-  color: #83888F;
+  color: var(--color-grey);
   font-family: Barlow;
   font-size: 12px;
   font-style: normal;
@@ -38,7 +38,7 @@
   text-transform: uppercase;
 }
 .nav__link:hover {
-  color: black;
+  color: var(--color-black);
 }
 
 .nav__button {
@@ -86,7 +86,7 @@
   padding-left: 85px;
 }
 .hero__info--heading {
-  color: #FEFCF7;
+  color: var(--color-whiteout);
   font-family: "Fraunces";
   font-size: 40px;
   font-style: normal;
@@ -94,7 +94,7 @@
   line-height: 48px;
 }
 .hero__info--text {
-  color: #FEFCF7;
+  color: var(--color-whiteout);
   font-family: "Barlow";
   font-size: 16px;
   font-style: normal;
@@ -132,7 +132,7 @@
   margin: 0;
   padding: 0;
   padding-bottom: 32px;
-  color: #333D4B;
+  color: var(--color-dimgrey);
   font-family: "Fraunces";
   font-size: 40px;
   font-style: normal;
@@ -142,7 +142,7 @@
 .about__text {
   padding: 0;
   margin: 0;
-  color: #333D4B;
+  color: var(--color-dimgrey);
   font-family: "Barlow";
   font-size: 16px;
   font-style: normal;
@@ -157,7 +157,7 @@
 .phonk .container {
   width: 1280px;
   height: 474px;
-  background-color: #2C343E;
+  background-color: var(--color-lightblack);
   position: relative;
   border-radius: 8px;
 }
@@ -178,7 +178,7 @@
   padding-top: 88px;
 }
 .phonk__heading {
-  color: #FEFCF7;
+  color: var(--color-whiteout);
   font-family: "Fraunces";
   font-size: 40px;
   font-style: normal;
@@ -188,7 +188,7 @@
 .phonk__text {
   margin: 0;
   padding: 0;
-  color: #FEFCF7;
+  color: var(--color-whiteout);
   font-family: "Barlow";
   font-size: 16px;
   font-style: normal;
@@ -197,6 +197,11 @@
   opacity: 0.8;
 }
 
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixwl-ratio: 2), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2ddpx) {
+  .phonk__image {
+    background-image: url(../image/Dark_Cofe.png);
+  }
+}
 .music {
   z-index: -1;
   margin-top: 158px;
@@ -206,7 +211,7 @@
 }
 .music__title {
   padding-bottom: 72px;
-  color: #83888F;
+  color: var(--color-grey);
   font-family: "Fraunces";
   font-size: 24px;
   font-style: normal;
@@ -222,7 +227,7 @@
   margin-bottom: 45px;
 }
 .music__heading {
-  color: #333D4B;
+  color: var(--color-dimgrey);
   font-family: "Fraunces";
   font-size: 32px;
   font-style: normal;
@@ -230,7 +235,7 @@
   line-height: 36px;
 }
 .music__text {
-  color: #333D4B;
+  color: var(--color-dimgrey);
   font-family: "Barlow";
   font-size: 16px;
   font-style: normal;
@@ -240,7 +245,7 @@
 
 .footer {
   margin-top: 158px;
-  background-color: #2C343E;
+  background-color: var(--color-lightblack);
 }
 .footer .container {
   display: flex;
@@ -259,7 +264,7 @@
   padding-left: 33px;
 }
 .navber__link {
-  color: #83888F;
+  color: var(--color-grey);
   font-family: "Barlow";
   font-size: 12px;
   font-style: normal;
@@ -268,7 +273,7 @@
   text-transform: uppercase;
 }
 .navber__link:hover {
-  color: black;
+  color: var(--color-black);
 }
 .navber__info {
   margin-left: 369px;
@@ -280,7 +285,7 @@
   transition: all 0.7s ease;
 }
 .navber path:hover {
-  fill: yellowgreen;
+  fill: var(--color-lightgreen);
 }
 
 /* barlow-regular - latin */
@@ -531,4 +536,13 @@ template {
 
 [hidden] {
   display: none;
+}
+
+:root {
+  --color-grey: #83888F;
+  --color-whiteout: #FEFCF7;
+  --color-lightblack: #2C343E;
+  --color-lightgreen: yellowgreen;
+  --color-dimgrey: #333D4B;
+  --color-black: #000000;
 }/*# sourceMappingURL=main.min.css.map */

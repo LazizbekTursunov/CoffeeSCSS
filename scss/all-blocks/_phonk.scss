@@ -6,7 +6,7 @@
     .container{
         width: 1280px;
         height: 474px;
-        background-color: #2C343E;
+        background-color: var(--color-lightblack);
         position: relative;
         border-radius: 8px;
     }
@@ -30,7 +30,7 @@
     }
 
     &__heading{
-        color: #FEFCF7;
+        color: var(--color-whiteout);
         font-family: "Fraunces";
         font-size: 40px;
         font-style: normal;
@@ -41,7 +41,7 @@
     &__text{
         margin: 0;
         padding: 0;
-        color: #FEFCF7;
+        color: var(--color-whiteout);
         font-family: "Barlow";
         font-size: 16px;
         font-style: normal;
@@ -51,4 +51,17 @@
     }
 
 
+}
+
+@media  
+only screen and (-webkit-min-device-pixel-ratio:2),
+only screen and (   min--moz-device-pixwl-ratio:2),
+only screen and (     -o-min-device-pixel-ratio:2/1),
+only screen and (        min-device-pixel-ratio:2),
+only screen and (                min-resolution:192dpi),
+only screen and (                min-resolution:2ddpx){
+
+   .phonk__image{
+    background-image: url(../image/Dark_Cofe.png);
+   }
 }

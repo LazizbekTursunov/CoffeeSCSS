@@ -1,6 +1,6 @@
 .footer{
     margin-top: 158px;
-    background-color: #2C343E;
+    background-color: var(--color-lightblack);
 
     .container{
         display: flex;
@@ -26,7 +26,7 @@
     }
 
     &__link{
-        color: #83888F;
+        color: var(--color-grey);
         font-family: "Barlow";
         font-size: 12px;
         font-style: normal;
@@ -36,7 +36,7 @@
         
 
         &:hover{
-            color: black;
+            color: var(--color-black);
         }
     }
 
@@ -52,7 +52,7 @@
         transition: all 0.7s ease;
 
         &:hover{
-            fill: yellowgreen;
+            fill: var(--color-lightgreen);
         }
     }
 }

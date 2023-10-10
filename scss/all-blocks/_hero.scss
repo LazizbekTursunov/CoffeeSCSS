@@ -23,7 +23,7 @@
     padding-left: 85px;
 
     &--heading {
-        color: #FEFCF7;
+        color: var(--color-whiteout);
         font-family: "Fraunces";
         font-size: 40px;
         font-style: normal;
@@ -32,7 +32,7 @@
     }
 
     &--text {
-        color: #FEFCF7;
+        color: var(--color-whiteout);
         font-family: "Barlow";
         font-size: 16px;
         font-style: normal;

@@ -28,7 +28,7 @@
     }
 
     &__link{
-        color: #83888F;
+        color: var(--color-grey);
         font-family: Barlow;
         font-size: 12px;
         font-style: normal;
@@ -38,7 +38,7 @@
         text-transform: uppercase;
 
         &:hover{
-            color: black;
+            color: var(--color-black);
         }
     }
 
